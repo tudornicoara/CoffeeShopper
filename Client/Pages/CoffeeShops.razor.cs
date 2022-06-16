@@ -1,5 +1,5 @@
 ﻿using API.Models;
-using IdentityServer4.Services;
+// using Client.Services;
 using Microsoft.AspNetCore.Components;
 
 namespace Client.Pages;
@@ -9,7 +9,7 @@ public partial class CoffeeShops
     private List<CoffeeShopModel> Shops = new();
     [Inject] private HttpClient HttpClient { get; set; }
     [Inject] private IConfiguration Config { get; set; }
-    [Inject] private ITokenService TokenService { get; set; }
+    // [Inject] private ITokenService TokenService { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
